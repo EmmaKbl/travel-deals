@@ -110,6 +110,7 @@ img {
 
 .bottom-text a:hover {
     text-decoration: none;
+    border: unset;
 }
 
 .main-content {
