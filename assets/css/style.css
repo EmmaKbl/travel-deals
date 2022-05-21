@@ -104,11 +104,12 @@ img {
 
 .bottom-text a {
     color: inherit;
-    border-bottom: 1px solid #E3333B;
+    text-decoration: none;
 }
 
 .bottom-text a:hover {
     text-decoration: none;
+    border-bottom: 1px solid #E3333B;
 }
 
 .main-content {
