@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 2rem;
+}
+
+h4 {
+    padding-block: 1em;
+}
+
+main>p {
+    padding-block: 1em;
+}
+
+.main-content a {
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+    max-width: 70px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 1em;
+}
+
+.card p {
+    padding-block: 1em;
+    font-style: italic;
+}
+
+.card a {
+    color: inherit;
+}
+
+.one,
+.eight {
+    background-color: #E3333B;
+    color: #FFF;
+}
+
+.one {
+    grid-area: s1;
+}
+
+.two {
+    background-image: url('../images/1.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    grid-area: s2;
+}
+
+.three {
+    background-color: #E5E5E5;
+    grid-area: s3;
+}
+
+.four {
+    background-image: url('../images/2.jpg');
+    grid-area: s4;
+}
+
+.five {
+    background-image: url('../images/3.jpg');
+    grid-area: s5;
+}
+
+.six {
+    background-color: #E5E5E5;
+    grid-area: s6;
+}
+
+.seven {
+    background-image: url('../images/4.jpg');
+    grid-area: s7;
+}
+
+.eight {
+    grid-area: s8;
+}
+
+.bottom-text {
+    padding-block: 1em;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr);
+    grid-auto-rows: 1fr;
+    grid-template-areas: "s1" "s2" "s3" "s4" "s6" "s5" "s8" "s7";
+}
+
+@media screen and (min-width:700px) {
+    .main-content {
+        grid-template-columns: minmax(285px) 1fr 1fr 1fr;
+        grid-auto-rows: repeat(2, minmax(600px, auto));
+        grid-template-areas: "s1 s2 s3 s4" "s5 s6 s7 s8";
+    }
+}
