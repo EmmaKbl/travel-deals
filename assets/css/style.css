@@ -102,6 +102,15 @@ img {
     padding-block: 1em;
 }
 
+.bottom-text a {
+    color: inherit;
+    border-bottom: 1px solid #E3333B;
+}
+
+.bottom-text a:hover {
+    text-decoration: none;
+}
+
 .main-content {
     display: grid;
     grid-template-columns: minmax(auto, 1fr);
