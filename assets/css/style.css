@@ -62,10 +62,10 @@ img {
 .two {
     background-image: url('../images/1.jpg');
     background-position: 50% 50%;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100%; */
     grid-area: s2;
 }
 
@@ -105,11 +105,11 @@ img {
 .bottom-text a {
     color: inherit;
     text-decoration: none;
+    border-bottom: 1px solid #E3333B;
 }
 
 .bottom-text a:hover {
     text-decoration: none;
-    border-bottom: 1px solid #E3333B;
 }
 
 .main-content {
